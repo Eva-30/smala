@@ -2,8 +2,8 @@
 
   const DB_HOST    = "localhost";
   const DB_NAME    = "smala";
-  const DB_LOGIN   = "evab";
-  const DB_PASS    = "paprika";
+  const DB_LOGIN   = "Martine";
+  const DB_PASS    = "mdp";
 
   const DB_DRIVER  = "mysql";
   const DB_CHARSET = "utf8mb4";
