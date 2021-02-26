@@ -37,7 +37,7 @@
       include("controller/ctrl-image-create.php");
       break;
 
-      case "check-image-create": /* Confirmation de l'ajout */
+    case "check-image-create": /* Confirmation de l'ajout */
         include("controller/ctrl-check-image-create.php");
         break;
 
@@ -53,10 +53,11 @@
       include("controller/ctrl-user-create.php");
       break;
 
-      case "user-read-all": /* Voir tous les autres pégus */
+    case "user-read-all": /* Voir tous les autres pégus */
         include("controller/ctrl-user-read-all.php");
         break;
-      case "user-delete": /* Assassiner un pégu */
+
+    case "user-delete": /* Assassiner un pégu */
          include("controller/ctrl-user-delete.php"); 
         break;
 /* Faudrait peut-etre rajouter des confirmation d'ajout, suppression et update */

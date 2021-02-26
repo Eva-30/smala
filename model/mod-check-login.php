@@ -15,9 +15,7 @@ if(isset($_POST['email'])){
              ':mail' => $mail));
              $resultat = $req->fetch();
      
-             // Comparaison du pass envoyé via le formulaire avec la base
-             $isPasswordCorrect = password_verify($pass, $resultat['user_pass']);
-             return $isPasswordCorrect;   
+               
            
       }catch(PDOException $e) {
      

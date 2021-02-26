@@ -7,7 +7,7 @@
     <title>Espace Utilisateur</title>
 </head>
 <body>
-
+<h2>Bienvenue <?php echo $resultat['user_pseudo'] ?> !</h2>
 <!-- bouton de déconnexion.-->
 <form method = "POST" action = "?deconnexion">
    <button type="submit"><img src='img/x-mark.png' alt='bouton croix de déconnexion'></button>
@@ -22,6 +22,8 @@
 
 //image bannière
 echo("<img src='img/smala-logo.svg' alt='bannière smala verte et blanche'></br>");
+
+//images de la smala
 while($image=$prep->fetch()){
     echo(
      "<img src=img/".$image['image_url']." "."alt='image' height='200px'>

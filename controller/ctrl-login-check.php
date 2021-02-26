@@ -2,7 +2,7 @@
 
 include("pdo.php");
 include("model/mod-check-login.php");
-    
+ 
 $pseudo = htmlspecialchars($resultat['user_pseudo']);
 $isPasswordCorrect = password_verify($pass, $resultat['user_pass']);
 $id = htmlspecialchars($resultat['user_id']);
