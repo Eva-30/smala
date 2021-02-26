@@ -5,7 +5,7 @@ include ('dbconf.php');
 
 if (isset($_GET['id']) and is_numeric($_GET['id'])){
     
-    $id_film = htmlspecialchars($_GET['id']);
+    $image_id = htmlspecialchars($_GET['id']);
     $connexion = new PDO(DB_DRIVER . ":host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET, DB_LOGIN, DB_PASS, DB_OPTIONS);
 
     //récupérer les infos de la photo 
@@ -19,7 +19,7 @@ if (isset($_GET['id']) and is_numeric($_GET['id'])){
 }
 if (isset($_POST['image_url'])){
     $connexion = new PDO(DB_DRIVER . ":host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=" . DB_CHARSET, DB_LOGIN, DB_PASS, DB_OPTIONS);
-    $id_film = htmlspecialchars($_POST['image_id']);
+    $image_id = htmlspecialchars($_POST['image_id']);
 
     $requete = "DELETE FROM `image` WHERE `image_id`=:image_id";
     $prepare = $connexion->prepare($requete);
