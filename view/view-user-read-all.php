@@ -14,5 +14,8 @@
         <input type="text" name="pseudo" placeholder="pseudo" required></p>
         <input type="submit" name="search_user">
     </form>
+    <form method='post' action='?admin'>
+        <button type='submit'>Retour</button>
+    </form>
 </body>
 </html>

@@ -18,11 +18,9 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
         $resultat = $stmt->fetch(); 
         return $resultat;
 
-             }catch(PDOException $e) {
+    }catch(PDOException $e) {
      
-             // en cas d'erreur, on récup et on affiche, grâce à notre try/catch
-             exit("❌🙀💀 OOPS :\n" . $e->getMessage());
-     
-             }
-
+        // en cas d'erreur, on récup et on affiche, grâce à notre try/catch
+        exit("❌🙀💀 OOPS :\n" . $e->getMessage());
+    }
 }

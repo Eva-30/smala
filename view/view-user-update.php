@@ -9,6 +9,7 @@
     <title>Modifier un utilisateur</title>
 </head>
 <body>
+
 <h2>Modifier l'utilisateur</h2>
 <form method="post">
     <input type="hidden" name="id" value="<?=$_SESSION['result']['user_id']?>">
@@ -22,6 +23,15 @@
         <option value="admin">admin</option>
     </select>
     <input type="submit" name="update_user">
+</form>
+
+<form method="post">
+    <input type="hidden" name="id" value="<?=$_SESSION['result']['user_id']?>">
+    <input type="submit" name="delete_user" value="Supprimer cet utilisateur">
+</form>
+
+<form method='post' action='?admin'>
+    <button type='submit'>Retour</button>
 </form>
 </body>
 </html>

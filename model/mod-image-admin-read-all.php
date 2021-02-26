@@ -5,7 +5,7 @@ try {
     $prep = $pdo->prepare($req);
     $prep->execute();
     return $prep;
-  } catch (PDOException $e) {
+} catch (PDOException $e) {
     $pdo = NULL; // bye db
     exit("OOPS - DB error : " . $e->getMessage());
   }

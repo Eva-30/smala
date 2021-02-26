@@ -10,21 +10,11 @@
     <title>LOGIN</title>
 </head>
 <body>
-
-  
-    <div class="container">
-    
-        <div class="content">
-            <h1>Login</h1>
-            <form action="?login" method="post">
-            <p><i class="fas fa-user"></i><input type="text" name="email" placeholder="email"></p>
-            <p><i class="fas fa-unlock-alt"></i><input type="password" name="password"placeholder="Password"></p>
-            <button type="submit" class="btn">Me connecter</button>
-            </form>
-        </div>
-    
-    </div>
-
-
+    <h1>Login</h1>
+    <form action="?login" method="post">
+        <input type="text" name="email" placeholder="email">
+        <input type="password" name="password"placeholder="Password">
+        <button type="submit">Me connecter</button>
+    </form>
 </body>
 </html>

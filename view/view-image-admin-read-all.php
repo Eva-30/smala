@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espace Admin</title>
+    <title>Espace Administrateur</title>
 </head>
 <body>
-<h1>espace administrateur</h1>
 <h2>Bienvenue <?php echo $resultat['user_pseudo'] ?> !</h2>
 
 <!--image bannière-->
 <img src='img/smala-logo.svg' alt='logo de la smala' height='100px'></br>
 
-<form method='post' action='?ajout-photo'>
-    <button type='submit' name='ajout-photo' value='ajout-photo'><img src='img/camera.png' alt='icone ajout de photo'></button>
+<form method='post' action='?image-create'>
+    <button type='submit' name='image-create' value='ajout-photo'><img src='img/camera.png' alt='icone ajout de photo'></button>
 </form>
 <form method='post' action='?deconnexion'>
     <button type='submit' value='deconnexion'><img src='img/x-mark.png' alt='icone de deconnexion'></button>

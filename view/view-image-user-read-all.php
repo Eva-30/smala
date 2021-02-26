@@ -14,7 +14,7 @@
 </form>
 
 <!-- bouton d'accès à la page de "création de photo". -->
-<form method = "POST" action = "?ajout-photo">
+<form method = "POST" action = "?image-create">
    <button type="submit"><img src='img/camera.png' alt='icone ajout image'></button>
 </form>
 
