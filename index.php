@@ -36,6 +36,14 @@
     case "admin-image-create": /* Création de l'image en admin, 'fin ajout */
       include("controller/ctrl-admin-image-create.php");
       break;
+      
+       case "delete": /* Création de l'image, 'fin ajout */
+        include("controller/ctrl-user-image-delete.php");
+        break;
+
+        case "admin-delete": /* Création de l'image, 'fin ajout */
+          include("controller/ctrl-admin-image-delete.php");
+          break;
     
     case "user-image-create": /* Création de l'image en user, 'fin ajout */
         include("controller/ctrl-user-image-create.php");
