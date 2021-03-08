@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    text-align: center;
+    background-color: #7CBC6C;
+    color: white;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+form{
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+.champ{
+    margin-top: 20px;
+}
+.petit-btn{
+    background-color: #7CBC6C;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid white 2px;
+    height: 35px;
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+    border-radius: 15px;
+}
+.gros-btn{
+    background-color: #7CBC6C;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border: solid white 3px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    width: 60%;
+    border-radius: 15px;
+}
