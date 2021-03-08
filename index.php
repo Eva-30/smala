@@ -21,7 +21,7 @@
         include("controller/ctrl-image-admin-read-all.php");
         break;
 
-    case "logout": /* Casse toi tu pues et marche à l'ombre */
+    case "deconnexion": /* Casse toi tu pues et marche à l'ombre */
       include("controller/ctrl-logout.php");
       break;
 
@@ -36,22 +36,26 @@
     case "admin-image-create": /* Création de l'image en admin, 'fin ajout */
       include("controller/ctrl-admin-image-create.php");
       break;
-      
-       case "delete": /* suppression de l'image, en user */
-        include("controller/ctrl-user-image-delete.php");
+    
+    case "admin-image-delete": /* delete de l'image en admin, 'fin ajout */
+        include("controller/ctrl-admin-image-delete.php");
         break;
-
-        case "admin-delete": /* supression de l'image, en admin */
-          include("controller/ctrl-admin-image-delete.php");
-          break;
     
     case "user-image-create": /* Création de l'image en user, 'fin ajout */
         include("controller/ctrl-user-image-create.php");
         break;
 
+    case "user-image-delete": /* delete de l'image en user, 'fin ajout */
+          include("controller/ctrl-user-image-delete.php");
+          break;
+
     case "check-image-create": /* Confirmation de l'ajout */
         include("controller/ctrl-check-image-create.php");
         break;
+    
+    case "image-update": /* modif image */
+          include("controller/ctrl-admin-image-update.php");
+          break;
 
     case "user-menu": /* Menu de l'utililsateur où il fera ses modifs */ 
       include("controller/ctrl-user-menu.php");
