@@ -3,7 +3,6 @@ session_start();
 include('pdo.php');
 include('model/mod-admin-compte.php');
 
-
 if (isset($_POST['update_pseudo'])){
     $pseudo = $_POST['pseudo_admin'];
     $req_update_pseudo = "UPDATE `users` SET `user_pseudo` = :pseudo WHERE `user_id`= :id";

@@ -33,9 +33,13 @@
       include("controller/ctrl-admin-menu.php");
     break;
 
-    case "image-create": /* Création de l'image, 'fin ajout */
-      include("controller/ctrl-image-create.php");
+    case "admin-image-create": /* Création de l'image en admin, 'fin ajout */
+      include("controller/ctrl-admin-image-create.php");
       break;
+    
+    case "user-image-create": /* Création de l'image en user, 'fin ajout */
+        include("controller/ctrl-user-image-create.php");
+        break;
 
     case "check-image-create": /* Confirmation de l'ajout */
         include("controller/ctrl-check-image-create.php");
