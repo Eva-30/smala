@@ -37,11 +37,11 @@
       include("controller/ctrl-admin-image-create.php");
       break;
       
-       case "delete": /* Création de l'image, 'fin ajout */
+       case "delete": /* suppression de l'image, en user */
         include("controller/ctrl-user-image-delete.php");
         break;
 
-        case "admin-delete": /* Création de l'image, 'fin ajout */
+        case "admin-delete": /* supression de l'image, en admin */
           include("controller/ctrl-admin-image-delete.php");
           break;
     
